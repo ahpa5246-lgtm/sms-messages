@@ -1,5 +1,33 @@
 # Bot Farm Simulation
 
+## Download, setup and project overview
+
+A local-only educational simulation of automated engagement.
+
+Synthetic account personas; seeded orchestration; in-memory posts; detector heuristics.
+
+![Project workflow illustration](docs/project-overview.svg)
+
+[Download source ZIP](https://github.com/ahpa5246-lgtm/sms-messages/archive/refs/heads/main.zip) · [Changes and branches](https://github.com/ahpa5246-lgtm/sms-messages/branches) · [Verification notes](docs/QUALITY_REVIEW.md)
+
+The ZIP contains source code. Installation steps and external runtime requirements are listed below.
+
+```bash
+git clone https://github.com/ahpa5246-lgtm/sms-messages.git
+cd sms-messages
+```
+
+From the repository directory:
+
+```text
+python -m venv .venv
+# Activate .venv before installing packages.
+python main.py
+```
+
+The diagram is a project illustration. Test results and runtime limitations are recorded in [the review](docs/QUALITY_REVIEW.md); it is not a production-readiness certification.
+
+
 A lightweight, local-only educational simulator showing how a coordinated pool of automated accounts can be orchestrated to generate synthetic engagement **inside the simulator**.
 
 It is designed for lectures and demonstrations about social bots, engagement farms, distributed task orchestration, and bot-detection heuristics.
